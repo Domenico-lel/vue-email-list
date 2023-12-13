@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+}
+
+#app{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+}
+
+li{
+    list-style: none;
+    color: blue;
+}
+h1{
+    color: red;
+}
