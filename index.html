@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Email List App</title>
+    <!-- Includi Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+    <!-- Includi Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js" integrity="sha512-b94Z6431JyXY14iSXwgzeZurHHRNkLt9d6bAHt7BZT38eqV+GyngIi/tVye4jBKPYQ2lBdRs0glww4fmpuLRwA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.11/vue.cjs.js"></script>
-    
-
-
+    <div id="app">
+        <h1>Email List</h1>
+        <ul>
+            <!-- Utilizza v-for per iterare sulle email e visualizzarle -->
+            <li v-for="email in emails" :key="email">{{ email }}</li>
+        </ul>
+    </div>
+    <!-- Includi il tuo script JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
